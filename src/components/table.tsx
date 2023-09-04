@@ -54,6 +54,7 @@ export default function Table<T extends Record<string, string>>({
                   {Object.keys(items?.[0]).map((key, idx) => {
                     return (
                       <th
+                        key={key}
                         scope="col"
                         className={classNames(
                           idx === 0 ? "" : "hidden sm:table-cell",
@@ -76,6 +77,7 @@ export default function Table<T extends Record<string, string>>({
                     {Object.keys(item).map((key, idx) => {
                       return (
                         <td
+                          key={item[key]}
                           className={classNames(
                             "whitespace-nowrap py-4  pl-4 pr-3 cursor-pointer text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8 ",
                             idx === 0 ? "" : "hidden sm:table-cell"
