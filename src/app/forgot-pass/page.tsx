@@ -26,7 +26,7 @@ export default function Example() {
             Reset Password
           </h2>
           <p className=" text-center text-sm text-gray-500">
-            Enter your email and we'll send a link so you can reset your
+            Enter your email and we`&apos;ll send a link so you can reset your
             password
           </p>
         </div>
